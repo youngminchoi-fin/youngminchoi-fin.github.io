@@ -57,9 +57,10 @@ header.topnav a {
 
 /* Profile image styling */
 .profile {
-  width: 200px;
-  border-radius: 50%; /* Makes it circular; remove if you want a rectangular look */
-  object-fit: cover;
+  width: 300px;  /* Increase or decrease as needed */
+  height: auto;  /* Keeps the correct aspect ratio */
+  border-radius: 0; /* Remove any rounded corners to make it rectangular */
+  object-fit: cover; /* Optional: ensures the image fills its box nicely */
 }
 
 /* Headings */

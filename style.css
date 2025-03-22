@@ -1,3 +1,8 @@
+/* Global resets and body styling */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,13 +11,14 @@ body {
   color: #333;
 }
 
+/* Top navigation bar */
 header.topnav {
   background-color: #fff;
   padding: 15px 30px;
-  text-align: right;
   border-bottom: 1px solid #ccc;
   position: sticky;
   top: 0;
+  text-align: right;
 }
 
 header.topnav a {
@@ -22,6 +28,7 @@ header.topnav a {
   font-weight: bold;
 }
 
+/* Main content container */
 .container {
   max-width: 1000px;
   margin: 40px auto;
@@ -35,15 +42,46 @@ header.topnav a {
   gap: 30px;
 }
 
+/* Left column with profile photo */
 .left-column {
-  flex: 0 0 200px;
+  flex: 0 0 220px; /* Adjust width as desired */
+  display: flex;
+  justify-content: center;
 }
 
+/* Right column with text */
 .right-column {
   flex: 1;
+  min-width: 250px;
 }
 
+/* Profile image styling */
 .profile {
-  width: 180px;
-  border-radius: 50%;
+  width: 200px;
+  border-radius: 50%; /* Makes it circular; remove if you want a rectangular look */
+  object-fit: cover;
+}
+
+/* Headings */
+h1 {
+  margin-top: 0;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Paragraph styling */
+p {
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+/* Link styling */
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

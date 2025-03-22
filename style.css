@@ -86,3 +86,33 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
+/* Container for each paper entry */
+.paper {
+  margin-bottom: 20px;
+}
+
+/* Paper title & coauthors */
+.paper-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Hyperlinks in paper title */
+.paper-title a {
+  text-decoration: none;
+  color: #0366d6;  /* or another accent color */
+}
+.paper-title a:hover {
+  text-decoration: underline;
+}
+
+/* The line that says “■ Accepted at …” or “■ Submitted …” */
+.paper-status {
+  margin-left: 15px; /* Indent if you like */
+  color: #444;
+  font-style: italic; /* optional */
+}
+

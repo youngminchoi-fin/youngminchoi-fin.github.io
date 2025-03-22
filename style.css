@@ -115,7 +115,7 @@ a:hover {
 
 /* Example styling for a profile image */
 .profile {
-  width: 250px;    /* adjust as needed */
+  width: 400px;    /* adjust as needed */
   height: auto;
   object-fit: cover;
   border-radius: 0; 

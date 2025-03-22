@@ -145,6 +145,6 @@ a:hover {
 /* For author names (if you want them not bold) */
 .authors {
   font-weight: 250; 
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: #333;
 }

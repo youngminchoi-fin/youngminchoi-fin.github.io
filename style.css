@@ -140,6 +140,7 @@ a:hover {
   margin-left: 15px;
   color: #444;
   font-style: italic;
+  font-size: 0.95rem;
 }
 
 /* For author names (if you want them not bold) */

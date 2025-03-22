@@ -139,3 +139,9 @@ a:hover {
   color: #444;
   font-style: italic; /* optional */
 }
+
+/* Normal (non-bold) for author names */
+.authors {
+  font-weight: 400; /* same as “normal” */
+  color: #333;      /* or any color you like */
+}

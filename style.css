@@ -11,7 +11,7 @@
 
 /* 3) Body styling (max-width, center alignment, etc.) */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
                Roboto, Helvetica, Arial, sans-serif;
   background: #fdfdfd;
   color: #333;
@@ -134,7 +134,7 @@ a:hover {
 }
 
 .paper-title a {
-  color: #0366d6;
+  color: #0346d6;
 }
 
 .paper-status {

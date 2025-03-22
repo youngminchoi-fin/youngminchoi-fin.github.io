@@ -59,7 +59,7 @@ header.topnav a {
 .profile {
   width: 300px;  /* Increase or decrease as needed */
   height: auto;  /* Keeps the correct aspect ratio */
-  border-radius: 0; /* Remove any rounded corners to make it rectangular */
+/*   border-radius: 0; /* Remove any rounded corners to make it rectangular */ */
   object-fit: cover; /* Optional: ensures the image fills its box nicely */
 }
 

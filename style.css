@@ -1,131 +1,87 @@
-/* 1) OPTIONAL: Import a Google Font (Source Sans Pro, for example) */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+/* 1) OPTIONAL: Import a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
 
 /* 2) Global reset / box-sizing */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* 3) Body styling */
+/* 3) Body styling (max-width, center alignment, etc.) */
 body {
-  /* Use the new font, fallback to system sans-serif if unavailable */
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-
-  /* Give the page a light background, your text a comfortable color */
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+               Helvetica, Arial, sans-serif;
   background: #fdfdfd;
   color: #333;
   
-  /* Keep text to a readable width and center it horizontally */
-  max-width: 1000px;   /* Adjust as desired (800–1000px often works well) */
-  margin: 40px auto;   /* 40px of space above/below; auto centers left/right */
-  padding: 0 20px;     /* 20px side padding so content doesn’t hit edges */
-  
-  line-height: 1.6;    /* Nice vertical spacing between lines */
+  max-width: 1000px; /* Limit line width for readability */
+  margin: 40px auto; /* Center horizontally, with 40px margin on top/bottom */
+  padding: 0 20px;   /* 20px side padding so text doesn't hug the edges */
+
+  line-height: 1.6;  /* Comfortable line spacing */
 }
 
-/* 4) Sticky top nav bar */
-/* Top navigation area */
+/* 4) Top navigation bar */
 header.topnav {
-  /* Horizontal layout using flex */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Name on left, nav links on right */
   align-items: center;
-
   background-color: #fff;
   border-bottom: 1px solid #ccc;
-
-  /* Spacing around nav */
   padding: 15px 30px;
+  margin-bottom: 40px; /* space below header to separate from content */
 }
 
-/* Right: Navigation links */
+/* Left side: site name (your name) in bigger font */
+.site-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Right side: nav links in smaller font */
 .nav-links a {
   margin-left: 20px;
   text-decoration: none;
-  
-  /* smaller font for top-right items */
   font-size: 0.9rem;
-  color: #555;  
-  font-weight: normal;
+  font-weight: 400;  /* normal weight */
+  color: #555;
 }
 
-/* Left: Larger name text */
-.site-name {
-  font-size: 1.8rem;   /* bigger text size for your name */
-  font-weight: bold;
-  color: #333;         /* pick any color */
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
-header.topnav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #0366d6;
-  font-weight: 600; /* Slightly heavier than normal text */
-}
-
-/* 5) Main container & row for your home page layout */
-.container {
-  /* This max-width can stay or be removed, since we already have one in body.
-     If you want a narrower container inside the body, keep it. */
-  max-width: 1000px;
-  margin: 40px auto; 
-  padding: 0 20px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 30px;
-}
-
-/* 6) Profile image columns */
-.left-column {
-  flex: 0 0 220px; /* Adjust width as desired */
-  display: flex;
-  justify-content: center;
-}
-
-.right-column {
-  flex: 1;
-  min-width: 250px;
-}
-
-/* 7) Profile image styling */
-.profile {
-  width: 300px;  /* Increase or decrease as needed */
-  height: auto;  /* Keeps aspect ratio */
-  /* border-radius: 0;  // uncomment if you want corners instead of circular */
-  object-fit: cover;   /* Ensures the image fills its box nicely */
-}
-
-/* 8) Headings: tune font sizes, margin, etc. */
+/* 5) Headings (h1, h2, etc.) */
 h1, h2, h3 {
   color: #222;
-  font-weight: 600;   /* Use Source Sans Pro weight 600 for headings */
-  margin: 0 0 10px 0; /* Some space below headings */
-  line-height: 1.2;
+  font-weight: 600; 
+  margin: 0 0 10px 0;
+  line-height: 1.25;
 }
+
 h1 {
   font-size: 2em;
-  margin-top: 0;  /* If you want no extra space above your first H1 */
+  margin-top: 0;
 }
+
 h2 {
   font-size: 1.5em;
-  margin-top: 30px;  /* Extra space before section headings */
+  margin-top: 30px; /* extra space before sub‐section headings */
 }
+
 h3 {
   font-size: 1.2em;
   margin-top: 20px;
 }
 
-/* 9) Paragraph styling */
+/* 6) Paragraph styling */
 p {
-  margin-bottom: 1rem; /* More breathing room below paragraphs */
-  line-height: 1.6; 
+  margin-bottom: 1rem;
 }
 
-/* 10) Default link styling */
+/* 7) Default link styling (outside top nav) */
 a {
   color: #0366d6;
   text-decoration: none;
@@ -135,36 +91,59 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 11) Publications/papers styling */
-.paper {
-  margin-bottom: 20px; /* Space between each paper entry */
+/* 8) Example for a flexible row layout (like for an image and text side by side) */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px; /* spacing below this section */
 }
 
-/* Paper title & coauthors */
+/* Left column (e.g., photo) */
+.left-column {
+  flex: 0 0 250px; /* fixed column width, adjust as desired */
+  display: flex;
+  justify-content: center;
+}
+
+/* Right column (e.g., text content) */
+.right-column {
+  flex: 1;         /* fill the remaining space */
+  min-width: 250px; 
+}
+
+/* Example styling for a profile image */
+.profile {
+  width: 250px;    /* adjust as needed */
+  height: auto;
+  object-fit: cover;
+  border-radius: 0; 
+}
+
+/* 9) Publications / paper layout (if relevant) */
+.paper {
+  margin-bottom: 20px; 
+}
+
 .paper-title {
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
 .paper-title a {
-  text-decoration: none;
   color: #0366d6;
 }
 
-.paper-title a:hover {
-  text-decoration: underline;
-}
-
-/* A line for statuses like “■ Accepted at …” or “■ Submitted …” */
 .paper-status {
-  margin-left: 15px; /* Indent if desired */
+  margin-left: 15px;
   color: #444;
-  font-style: italic; /* optional */
+  font-style: italic;
 }
 
-/* Normal (non-bold) for author names */
+/* For author names (if you want them not bold) */
 .authors {
-  font-weight: 300; /* same as “normal” */
-  color: #333;      /* or any color you like */
+  font-weight: 400; 
+  color: #333;
 }

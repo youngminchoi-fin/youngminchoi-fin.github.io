@@ -24,13 +24,36 @@ body {
 }
 
 /* 4) Sticky top nav bar */
+/* Top navigation area */
 header.topnav {
+  /* Horizontal layout using flex */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   background-color: #fff;
-  padding: 15px 30px;
   border-bottom: 1px solid #ccc;
-  position: sticky;
-  top: 0;
-  text-align: right;
+
+  /* Spacing around nav */
+  padding: 15px 30px;
+}
+
+/* Right: Navigation links */
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  
+  /* smaller font for top-right items */
+  font-size: 0.9rem;
+  color: #555;  
+  font-weight: normal;
+}
+
+/* Left: Larger name text */
+.site-name {
+  font-size: 1.8rem;   /* bigger text size for your name */
+  font-weight: bold;
+  color: #333;         /* pick any color */
 }
 
 header.topnav a {

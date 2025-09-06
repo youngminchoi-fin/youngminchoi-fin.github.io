@@ -153,3 +153,7 @@ a:hover {
   font-size: 0.9rem;
   color: #333;
 }
+
+#pub-analyst-recs .authors .status {
+  font-weight: 700; /* ensures bold even if a reset/inheritance neutralizes <strong> */
+}

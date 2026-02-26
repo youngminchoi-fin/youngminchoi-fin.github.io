@@ -2,81 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <meta name="google-site-verification" content="g3W6yJQtXtDI3nsGseCbd8fDJ8TSmY2d1Xbp0Nas4uI" />
-  
-  <!-- 1. Descriptive Title -->
-  <title>Youngmin Choi - Assistant Professor of Finance | Xavier University</title>
-  
-  <!-- 2. Meta Description (Search engines often use this in search results) -->
-  <meta name="description" content="Official webpage of Youngmin Choi, Assistant Professor of Finance at Xavier University. Find research, teaching information, and a downloadable CV here.">
-  
-  <!-- 3. Responsive Viewport (Important for mobile friendliness) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- 4. Optional: Meta Keywords (Not heavily used by Google anymore, but no harm including) -->
-  <meta name="keywords" content="Youngmin Choi, Finance, Xavier University, Baruch College, Research, Teaching, CV">
-  
-  <!-- 5. Link to your CSS file -->
+  <meta name="google-site-verification" content="g3W6yJQtXtDI3nsGseCbd8fDJ8TSmY2d1Xbp0Nas4uI" />
+  <title>Youngmin Choi — Assistant Professor of Finance</title>
+  <meta name="description" content="Youngmin Choi is an Assistant Professor of Finance at Xavier University. Research in empirical asset pricing, derivatives, high-frequency data, and machine learning.">
+  <meta name="keywords" content="Youngmin Choi, Finance, Xavier University, Empirical Asset Pricing, Derivatives, High-Frequency Data, Machine Learning">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5NMDG8R4Q7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5NMDG8R4Q7');
-</script>
-
-  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NMDG8R4Q7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5NMDG8R4Q7');
+  </script>
 </head>
 <body>
-  <!-- Top Navigation -->
-  <header class="topnav">
-    <!-- Left side: Name/Logo -->
-    <div class="site-name">Youngmin Choi</div>
-    
-    <!-- Right side: Nav links -->
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
+
+  <!-- ========== SIDEBAR ========== -->
+  <aside class="sidebar">
+    <div class="sidebar-photo-wrap">
+      <img src="images/profile.png" alt="Youngmin Choi" class="sidebar-photo">
+    </div>
+
+    <div class="sidebar-name">Youngmin Choi</div>
+    <div class="sidebar-title">
+      Assistant Professor of Finance<br>
+      Xavier University
+    </div>
+
+    <hr class="sidebar-divider">
+
+    <!-- Contact -->
+    <div class="sidebar-contact">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+      <span><a href="mailto:choiy5@xavier.edu">choiy5@xavier.edu</a></span>
+    </div>
+
+    <div class="sidebar-contact">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+      </svg>
+      <span>SMH-225, Cincinnati OH</span>
+    </div>
+
+    <!-- External Links -->
+    <div class="sidebar-ext-links">
+      <a class="ext-btn" href="https://scholar.google.com/citations?hl=en&user=5pdHI0IAAAAJ" target="_blank" rel="noopener">
+        Google Scholar
+      </a>
+      <a class="ext-btn" href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2370155" target="_blank" rel="noopener">
+        SSRN
+      </a>
+    </div>
+    <div style="margin-top:8px;">
+      <a class="ext-btn" href="files/CV_YoungminChoi.pdf" target="_blank" rel="noopener" style="display:block;text-align:center;padding:8px;">
+        📄 &nbsp;Curriculum Vitae
+      </a>
+    </div>
+
+    <hr class="sidebar-divider">
+
+    <!-- Navigation -->
+    <nav class="sidebar-nav">
+      <div class="sidebar-nav-label">Menu</div>
+      <a href="index.html" class="active">Home</a>
       <a href="research.html">Research</a>
-      <a href="research.html">Teaching</a>
+      <a href="teaching.html">Teaching</a>
       <a href="files/CV_YoungminChoi.pdf" target="_blank">CV</a>
     </nav>
-  </header>
+  </aside>
 
-  <!-- Main Content Container -->
-  <div class="container row">
-    <!-- Left Column (Photo) -->
-    <div class="left-column">
-      <img src="images/profile.png" alt="Portrait of Youngmin Choi" class="profile">
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Welcome</h1>
+      <p>Assistant Professor of Finance · Xavier University · Cincinnati, OH</p>
     </div>
 
-    <!-- Right Column (Text) -->
-    <div class="right-column">
-<!--       <h1>Youngmin Choi</h1> -->
-      <p><strong>Assistant Professor of Finance</strong></p>
-
-      <p>Department of Finance <br>
-<!--       Williams College of Business <br> -->
-      Xavier University</p>
-      
+    <div class="home-bio">
       <p>
-        E-mail: 
-        <a href="mailto:Youngmin.Choi83@gmail.com">Youngmin.Choi83@gmail.com</a> <br>
+        I am an Assistant Professor of Finance in the
+        <a href="https://www.xavier.edu/finance-program" target="_blank">Department of Finance</a>
+        at Xavier University's Williams College of Business.
       </p>
-      
       <p>
-        <a href="files/CV_YoungminChoi.pdf" target="_blank">Click here for my CV</a>.
-      </p>
-      
-      <!-- 6. Additional content to help search engines understand your page -->
-      <p>
-        Research areas: Empirical asset pricing, Derivatives, High-frequency data, AI/Machine Learning
+        My research focuses on empirical asset pricing, derivatives markets, and the
+        microstructure of high-frequency financial data. I also apply machine learning
+        methods to questions in asset pricing and risk.
       </p>
     </div>
-  </div>
+
+    <div class="section-title">Research Interests</div>
+    <div class="research-areas">
+      <span class="area-tag">Empirical Asset Pricing</span>
+      <span class="area-tag">Derivatives</span>
+      <span class="area-tag">High-Frequency Data</span>
+      <span class="area-tag">Market Microstructure</span>
+      <span class="area-tag">Machine Learning in Finance</span>
+    </div>
+
+  </main>
+
 </body>
 </html>
